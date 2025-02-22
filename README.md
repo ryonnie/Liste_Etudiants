@@ -5,7 +5,8 @@ représenté par un dictionnaire avec les informations suivantes :
 * Nom (chaîne de caractères)
 * Âge (entier)
 * Matière préférée (chaîne de caractères)
-Le programme doit permettre d'effectuer les opérations suivantes sur la liste d'étudiants :
+
+-Le programme doit permettre d'effectuer les opérations suivantes sur la liste d'étudiants :
 1. Ajouter un étudiant : L'utilisateur doit pouvoir saisir le nom, l'âge et la matière préférée de
 l'étudiant à ajouter.
 2. Modifier les informations d'un étudiant : L'utilisateur peut modifier l'âge ou la matière
