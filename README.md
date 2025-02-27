@@ -18,3 +18,4 @@ préférée.
 5. Rechercher un étudiant par son nom : L'utilisateur peut rechercher un étudiant spécifique en
 utilisant son nom pour afficher ses informations.
 6. Quitter le programme : Lorsque l'utilisateur a fini, il peut choisir de quitter le programme.
+le continue de enregistrement sera enregistrer dans une fichier json
