@@ -1,4 +1,19 @@
 list_e=[]
+from json import dump,load
+
+def load_data():
+    try:
+        with open('students.json', 'r') as file:
+            return load(file)
+    except FileNotFoundError:
+        return []
+
+def save_data(data):
+    with open('students.json', 'w') as file:
+        dump(data, file,indent=4,sort_keys=True)
+
+list_e = load_data()
+
 while True:
     print("***Gerer une Liste Etudiants***")
     i=1
@@ -28,6 +43,7 @@ while True:
             'matiere':matiere_preferer
         }
         list_e.append(e)
+
         print("=>Ajoutez succeess!\n")
 
     elif (choix=="2"):
@@ -71,12 +87,13 @@ while True:
         for e in list_e:
             if e["Nom"]==n:
                 print(f"Age :{e["Age"]},Matiere preferer :{e["matiere"]}\n")
-            else:
-                print("Nom Invalide !\n")
                 break
+        if e["Nom"]!=n:
+            print("Nom Invalide !\n")
         
 
     elif (choix=="6"):
+        save_data(list_e)
         print("=>Programme Terminer!\n")
         break
 
